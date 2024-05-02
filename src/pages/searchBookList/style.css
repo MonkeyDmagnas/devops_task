@@ -1,0 +1,102 @@
+section .searchtitle {
+  display: block;
+  margin-top: 3.6vh;
+  margin-bottom: 6vh;
+}
+
+section .searchtitle h1 {
+  font-weight: 300;
+  margin-bottom: 6px;
+  color: #030d44;
+  font-size: 30px;
+}
+
+section .search-book-list {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  section .search-book-list {
+    display: grid;
+    grid-template-columns: 0.7fr 4fr;
+    grid-gap: 2rem;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+}
+
+section .search-container {
+  margin-top: 5vh;
+}
+
+section .search-book-desc {
+  width: 46%;
+  text-align: left;
+}
+
+.search-book-list h1 {
+  font-weight: 600;
+  margin-bottom: 1.8vh;
+  color: #030d44;
+  cursor: pointer;
+}
+
+.search-book-list h1:hover {
+  color: blue;
+}
+
+.search-book-list .author {
+  margin-bottom: 1vh;
+}
+
+.search-book-list p {
+  font-size: 15px;
+}
+
+.search-book-list img {
+  cursor: pointer;
+}
+
+.search-book-list img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+.search-book-list .desc-tag {
+  display: flex;
+  margin-top: 2vh;
+}
+
+.search-book-list p > small {
+  font-size: 15px;
+}
+
+.desc-tag strong > .price {
+  color: #b2395b;
+}
+
+.pagination {
+  display: inline-flex;
+  margin-top: 8vh;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.pagination .active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}

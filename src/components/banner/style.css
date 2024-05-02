@@ -1,0 +1,30 @@
+.bg {
+  background: #eee;
+  padding: 0 0 10px 0;
+}
+
+h1.index {
+  text-align: center !important;
+  padding-top: 21px;
+  margin-bottom: 10.5px;
+}
+
+h2.index {
+  text-align: center !important;
+  color: #b2395b !important;
+  margin-bottom: 10.5px;
+}
+
+h1.single-book-title {
+  text-align: left !important;
+  padding-top: 21px;
+  margin-bottom: 10.5px;
+}
+
+h2.single-book-desc {
+  text-align: left !important;
+  color: #b2395b !important;
+  margin-bottom: 10.5px;
+  font-weight: 500;
+  font-size: 1.2rem !important;
+}

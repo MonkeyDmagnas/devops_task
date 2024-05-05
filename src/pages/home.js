@@ -6,7 +6,7 @@ export default function home() {
   return (
       <>
         <Banner>
-            <h1 className="index">Welcome to BOOKSTORE</h1>
+            <h1 className="index">Welcome to IT BOOKSTORE</h1>
             <h2 className="index">IT, Programming and Computer Science Books</h2>          
         </Banner>
         <Newbook />

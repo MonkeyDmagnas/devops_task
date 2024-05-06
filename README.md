@@ -10,8 +10,15 @@ React-Project need node.js environment and its dependencies to run.
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-#creating virtual machines with vagrantfile.
-#login as root user
+#creating server with virtual machines with Vagrantfile.
+#ssh root user with Vagrant
 yum update -y && yum upgrade -y
 yum install epel-release -y
+yum -y install java-11-openjdk java-11-openjdk-devel
+#Select java version 11 and above with following command
+alternatives --config java
+#installing docker in centos/7 with docker documentation ("https://docs.docker.com/engine/install/centos/")
+#installing jenkins in docker with jenkins documentation ("https://www.jenkins.io/doc/book/installing/docker/")
+#Check Git version
+
 ```

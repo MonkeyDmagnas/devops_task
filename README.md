@@ -2,6 +2,12 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 IT Boookstore is a react-project developed as dummy and I have used this project as test for my Devops project.
+You can run my project by running in Docker by pulling image link below:
+```
+docker pull monkeydmagnas007/staging_task:latest
+#or
+docker pull monkeydmagnas007/development_task:latest
+```
 
 ## Installation
 
@@ -20,5 +26,6 @@ alternatives --config java
 #installing docker in centos/7 with docker documentation ("https://docs.docker.com/engine/install/centos/")
 #installing jenkins in docker with jenkins documentation ("https://www.jenkins.io/doc/book/installing/docker/")
 #Check Git version
-
+git --version
+connect to Git
 ```

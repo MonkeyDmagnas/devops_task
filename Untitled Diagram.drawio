@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-07T07:52:32.539Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="D8vd-zpH65XiL_mZ47CJ" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-07T07:54:58.534Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="bqWRvvYVLpHxbTCGlOVj" version="24.3.1" type="github">
   <diagram name="Page-1" id="8dkIdon7dROiPM6DBQVO">
     <mxGraphModel dx="1032" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -130,7 +130,7 @@
           <mxGeometry x="600" y="273" width="59" height="55" as="geometry" />
         </mxCell>
         <mxCell id="YGbNaXJZvyxlfV9vPm25-53" value="Pilpeline Artifact" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="470" y="158" width="100" height="30" as="geometry" />
+          <mxGeometry x="431" y="146" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YGbNaXJZvyxlfV9vPm25-54" value="Publish Artifact" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="280" y="243" width="110" height="30" as="geometry" />

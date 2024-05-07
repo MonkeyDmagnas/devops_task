@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-07T07:46:56.889Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="Q6Wa-EH3TAUuzgvYg-my" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-07T07:49:12.602Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="djEsPzCHqC-F_a6U2yCI" version="24.3.1" type="github">
   <diagram name="Page-1" id="8dkIdon7dROiPM6DBQVO">
     <mxGraphModel dx="1032" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -163,6 +163,9 @@
         </mxCell>
         <mxCell id="3N9t-4mWLnmyMj3Ca19C-3" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" parent="1" vertex="1">
           <mxGeometry x="520" y="493.4" width="60" height="49.2" as="geometry" />
+        </mxCell>
+        <mxCell id="_k_8pDz7TIOHNUYlf_Om-1" value="Build Agent" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="570" width="90" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

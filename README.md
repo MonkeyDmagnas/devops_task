@@ -12,33 +12,41 @@ docker run -idt -p 8000:8000 monkeydmagnas007/development_task:latest
 #make sure 8000 port is available
 ```
 
-1. Git Repository Setup
-•
-•
-•
+### 1. Git Repository Setup
+
 Structure:
+
 •Main branches: development, staging, production.
+
 •Feature branches for each task.
+
 Branching Strategy:
+
 •development: Active development, integration testing.
+
 •staging: Pre-release testing.
+
 •production: Live environment.
+
 Steps:
-•
-Set up a connection to the remote repository in command line using:
+
+•Set up a connection to the remote repository in command line using:
 git remote add origin <repo_link>
-•
-Create branches using:git checkout -b <new_branch>
-2. Infrastructure with Vagrant
-•
-Virtual Machines:
-•
-Development
-• Base Image: ubuntu/focal64
-• Hostname: development
-• Private IP: 192.168.56.18
-• Memory: 1024
-Staging
+
+•Create branches using:git checkout -b <new_branch>
+
+### 2. Infrastructure with Vagrant
+
+•Virtual Machines:
+
+•Development
+
+  • Base Image: ubuntu/focal64 \
+  • Hostname: development \
+  • Private IP: 192.168.56.18 \
+  • Memory: 1024
+
+### Staging
 • Base Image: ubuntu/focal64
 • Hostname: staging
 • Private IP: 192.168.56.19

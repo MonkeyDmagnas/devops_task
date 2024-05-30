@@ -8,8 +8,8 @@ docker pull monkeydmagnas007/staging_task:latest
 #or
 docker pull monkeydmagnas007/development_task:latest
 #and 
-docker run -idt -p 8000:8000 monkeydmagnas007/development_task:latest
-#make sure 8000 port is available
+docker run -idt -p 3000:3000 monkeydmagnas007/development_task:latest
+#make sure 3000 port is available
 ```
 
 ### 1. Git Repository Setup

@@ -535,3 +535,5 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/flannel/v3.25.0/manifests/flannel.yaml
 ```
 ▪Run ‘kubectl get nodes’ to check the state of the nodes•
+
+![Alt text] (src/images/Screenshot from 2024-05-03 13-13-25.png)

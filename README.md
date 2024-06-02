@@ -537,3 +537,16 @@ kubectl apply -f https://raw.githubusercontent.com/projectcalico/flannel/v3.25.0
 ▪Run ‘kubectl get nodes’ to check the state of the nodes•
 
 ![Alt text](images/image1.png)
+![Alt text](images/image2.png)
+![Alt text](images/image3.png)
+![Alt text](images/image4.png)
+![Alt text](images/image5.png)
+![Alt text](images/image6.png)
+![Alt text](images/image7.png)
+![Alt text](images/image8.png)
+![Alt text](images/image9.png)
+![Alt text](images/image10.png)
+![Alt text](images/image11.png)
+![Alt text](images/image12.png)
+![Alt text](images/image13.png)
+![Alt text](images/image14.png)

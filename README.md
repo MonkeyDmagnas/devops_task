@@ -49,7 +49,7 @@ git remote add origin <repo_link>
   •ServerB as database backup server
 
   • Base Image: centos/07 \
-  • Hostname: development \
+  • Hostname: Database_backup \
   • Private IP: 192.168.56.16 \
   • Memory: 2048
 

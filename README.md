@@ -1,7 +1,7 @@
 # DEVOPS-TASK DOCUMENTATION
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-IT Boookstore is a react-project. I have used this project as test for my Devops project.
+IT Boookstore is a react-project. I have used this project for my Devops task. \
 You can run my project by running in Docker by pulling image link below:
 ```
 docker pull monkeydmagnas007/staging_task:latest

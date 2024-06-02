@@ -44,7 +44,7 @@ git remote add origin <repo_link>
   • Base Image: centos/07 \
   • Hostname: development \
   • Private IP: 192.168.56.15 \
-  • Memory: 1024
+  • Memory: 2048
 
 Download and Install Vagrant( https://developer.hashicorp.com/vagrant/install ). \
 Create a new folder and open it in VS code. \
@@ -528,7 +528,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/flannel/v3.25.0/manifests/flannel.yaml
 ```
-▪Run ‘kubectl get nodes’ to check the state of the nodes•
+▪Run ‘kubectl get nodes’ to check the state of the nodes.\
+Here are some screeenshot as a proof that is setup as tasks are given:
 
 ![Alt text](images/image1.png)
 ![Alt text](images/image2.png)

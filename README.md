@@ -39,11 +39,18 @@ git remote add origin <repo_link>
 
 •Virtual Machines:
 
-•Development
+•ServerA as development, staging and production with different ports defined . \
 
   • Base Image: centos/07 \
   • Hostname: development \
   • Private IP: 192.168.56.15 \
+  • Memory: 2048
+
+  •ServerB as database backup server
+
+  • Base Image: centos/07 \
+  • Hostname: development \
+  • Private IP: 192.168.56.16 \
   • Memory: 2048
 
 Download and Install Vagrant( https://developer.hashicorp.com/vagrant/install ). \

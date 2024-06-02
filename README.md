@@ -47,31 +47,30 @@ git remote add origin <repo_link>
   • Memory: 1024
 
 Download and Install Vagrant( https://developer.hashicorp.com/vagrant/install ). \
-Create a new folder and open it in VS code.
+Create a new folder and open it in VS code. \
 Create Vagrant file using:
 ```
 vagrant init
 ```
-Describe infrastructure in vagrant file:•
+Describe infrastructure in vagrant file:• \
 Create the VMs using:
 ```
 vagrant up
 ```
-3. CI Pipeline Using Jenkins
-•
-Pipeline:
-•Stages:
-• Git: host the code from ‘staging’ branch.
-• Build: build a docker image using Nginx: alpine as base image.
-• Push: push image to docker hub.
+### 3. CI Pipeline Using Jenkins
+•Pipeline: \
+•Stages: \
+• Git: host the code from ‘staging’ branch. \
+• Build: build a docker image using Nginx: alpine as base image. \
+• Push: push image to docker hub. \
 
 Deployment:
 
-Pull image from docker hub to the staging VM.
-Deploy the image on port 8080.
+Pull image from docker hub to the staging VM. \
+Deploy the image on port 8080. \
 
-• Steps:
-Install Docker:
+• Steps: \
+Install Docker: \
 • Add Docker's official GPG key:
 ```
 sudo apt-get update
@@ -150,24 +149,23 @@ DOCKER_TLS_VERIFY=1 \
 ```
 •Create the pipeline in Jenkins :
 
-To have a build trigger use Poll SCM
+To have a build trigger use Poll SCM \
 •Deploy the application on a staging environment using Docker:
 ```
-docker run --name my-nginx-container -d -p 8080:80 ranjan101/git-task-new:latest4. Monitoring with Prometheus and Grafana
+docker run --name my-nginx-container -d -p 8080:80 monkeydmagnas007/staging-task:latest.
 ```
-•Purpose:
-•Components:
-•Prometheus: Collects metrics from servers and applications.
-•Grafana: Provides dashboards for visualization.
-Implementation:
-Collects and visualizes system metrics.
-Implement jobs for Jenkins and Node exporter in Prometheus to gather system and
-Jenkins matrices.
-Using Prometheus as data source in Grafana to visualize and monitor the system.
-Security Measures:
-•RBAC: Restricts access to Grafana.
-•Encryption: Running Grafana server in https with self-signed SSL certificate for secure
-transmission.
+### 4. Monitoring with Prometheus and Grafana 
+•Purpose: \
+•Components: \
+•Prometheus: Collects metrics from servers and applications. \
+•Grafana: Provides dashboards for visualization. \
+Implementation: \
+Collects and visualizes system metrics. \
+Implement jobs for Jenkins and Node exporter in Prometheus to gather system and Jenkins matrices. \
+Using Prometheus as data source in Grafana to visualize and monitor the system. \
+Security Measures: \
+•RBAC: Restricts access to Grafana. \
+•Encryption: Running Grafana server in https with self-signed SSL certificate for secure transmission. \
 Steps:
 
 •Installation of Prometheus
@@ -199,8 +197,7 @@ sudo cp prometheuspackage/promtool /usr/local/bin/
 sudo chown prometheus:prometheus /usr/local/bin/Prometheus
 sudo chown prometheus:prometheus /usr/local/bin/promtool
 ```
-•Copy “consoles” and “console_libraries” to /etc/Prometheus and change
-their ownership
+•Copy “consoles” and “console_libraries” to /etc/Prometheus and change their ownership
 ```
 sudo cp -r prometheuspackage/consoles /etc/Prometheus
 sudo cp -r prometheuspackage/console_libraries /etc/Prometheus
@@ -258,7 +255,7 @@ sudo systemctl status Prometheus•
 ```
 http://Server-IP:9090/graph
 ```
-Integrate Node Exporter with Prometheus
+Integrate Node Exporter with Prometheus \
 •Create a system user for the installation.
 ```
 sudo useradd -rs /bin/false node_exporter
@@ -269,8 +266,7 @@ wget
 https://github.com/prometheus/node_exporter/releases/download/v
 1.5.0/node_exporter-1.5.0.linux-arm64.tar.gz
 ```
-•Extract & move the node_exporter package and rename the directory to
-‘node_exporter’
+•Extract & move the node_exporter package and rename the directory to ‘node_exporter’ \
 ```
 sudo tar -xzvf node_exporter-1.5.0.linux-amd64.tar.gz
 sudo mv node_exporter-1.5.0.linux-amd64/node_exporter
@@ -309,9 +305,9 @@ scrape_interval: 5s
 static_configs:
 - targets: ['server-ip:9100']
 ```
-•Now we can see node_exporter on http://server-ip:9090/targets•
-•Install Grafana
-•Update server
+•Now we can see node_exporter on http://server-ip:9090/targets• \
+•Install Grafana \
+•Update server \
 ```
 sudo apt-get update
 ```
@@ -345,20 +341,20 @@ sudo apt-get install grafana
 ```
 systemctl status grafana-server
 ```
-•Add Prometheus as data source in Grafana location
-•Role-Based Access Control in Grafana
-•Make users with different level of access control in Grafana
+•Add Prometheus as data source in Grafana location \
+•Role-Based Access Control in Grafana \
+•Make users with different level of access control in Grafana \
 
-•5. MySQL Server Backup and Migration
-•Backup Strategy:
-Migration:
-mysqldump for backup.
-Crontab to trigger mysqldump for timely backup.
-File compression: gzip to compress backup file.
-Secure Copy Protocol (SCP) for file transfer
+### 5. MySQL Server Backup and Migration
+•Backup Strategy: \
+Migration: \
+mysqldump for backup. \
+Crontab to trigger mysqldump for timely backup. \
+File compression: gzip to compress backup file. \
+Secure Copy Protocol (SCP) for file transfer \
 Steps:
-•
-Create a shell script named db-backup.sh and inside it:
+
+•Create a shell script named databse_backup.sh and inside it:
 ```
 #!/bin/bash
 BACKUP_DIR="/path/to/backup-directory"
@@ -366,8 +362,7 @@ mkdir -p "$BACKUP_DIR"
 DB_USER="root"
 DB_PASSWORD="<password>"
 DATABASE="<database-name>"
-mysqldump -u$DB_USER -p$DB_PASSWORD $DATABASE >
-$BACKUP_DIR/backupfilename_$(date +"%Y%m%d").sql
+mysqldump -u$DB_USER -p$DB_PASSWORD $DATABASE > $BACKUP_DIR/backupfilename_$(date +"%Y%m%d").sql
 ```
 •Use crontab to set a timely backup
 ```
@@ -375,18 +370,17 @@ crontab -e
 o Inside it copy
 ```
 ```
-1 * * * * /root/sql-backup/db-backup.sh
+1 * * * * /root/sql-backup/databse_backup.sh
 ```
-So that the script will be executed at 1 minute past every hour
-•For Migration
-▪ Compress the backupfile:
-
+So that the script will be executed at 1 minute past every hour \
+•For Migration \
+▪ Compress the backupfile: \
+```
 gzip <filename>
-
-▪To transfer
-• Generate an SSH key pair on both VMs.ssh-keygen -t rsa
-•
-Retrieve the public key of source VM
+```
+▪To transfer \
+• Generate an SSH key pair on both VMs.ssh-keygen -t rsa \
+•Retrieve the public key of source VM \
 ```
 cat ~/.ssh/id_rsa.pub and copy the content.
 ```
@@ -404,24 +398,24 @@ chmod 600 ~/.ssh/authorized_keys
 scp /path/to/<filename>
 user@destinationipaddress:/path/to/file
 ```
-•In Destination Server
-▪ Unzip the file
-gunzip <filename>
-▪Create a database to migrate
+•In Destination Server \
+▪ Unzip the file \
+gunzip <filename> \
+▪Create a database to migrate \
 ```
 mysql -u <username> -p<password>
 Create database <database-name>;
-Use <database-name>;Exit;
+Use database_name;Exit;
 ```
 ▪
 To restore from backup file
 ```
-mysql -u <username> -p <database-name> < <backupfilename>6. Kubernetes Cluster on set of Ubuntu 22.04 Virtual Machines
+mysql -u <username> -p <database-name> < <backupfilename>6. 
 ```
-•Steps:
-o Creating VMs using Vagrant
-▪ Create a Vagrant file and copy following content to make two
-nodes one master and another worker.
+### 6. Kubernetes Cluster on set of Ubuntu 22.04 Virtual Machines
+• Steps: \
+▪ Creating VMs using Vagrant \
+▪ Create a Vagrant file and copy following content to make two nodes one master and another worker.  \
 ```
 Vagrant.configure("2") do |config|
 config.vm.define "kube_master_1" do |vm1|
@@ -452,9 +446,9 @@ end
 end
 end
 ```
-Run ‘vagrant up’ in terminal to provision the VMs.
-o On both nodes do following:
-▪ Update and Upgrade System
+Run ‘vagrant up’ in terminal to provision the VMs. \
+o On both nodes do following: \
+▪ Update and Upgrade System \
 ```
 sudo apt-get update
 sudo apt-get upgrade

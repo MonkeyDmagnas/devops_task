@@ -419,7 +419,7 @@ To restore from backup file
 ```
 mysql -u <username> -p <database-name> < <backupfilename>6. 
 ```
-### 6. Deployment Architecture document far all the given task and application.
+### 6. Deployment Architecture document for all the given task and application.
 
 ![Alt text](images/image3.png)
 

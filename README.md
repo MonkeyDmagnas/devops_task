@@ -419,7 +419,11 @@ To restore from backup file
 ```
 mysql -u <username> -p <database-name> < <backupfilename>6. 
 ```
-### 6. Kubernetes Cluster on set of Ubuntu 22.04 Virtual Machines
+### 6. Deployment Architecture document far all the given task and application.
+
+![Alt text](images/image3.png)
+
+### 7. Kubernetes Cluster on set of Ubuntu 22.04 Virtual Machines
 • Steps: \
 ▪ Creating VMs using Vagrant \
 ▪ Create a Vagrant file and copy following content to make two nodes one master and another worker.  \
@@ -540,7 +544,7 @@ Here are some screeenshot as a proof that is setup as tasks are given:
 
 ![Alt text](images/image1.png)
 ![Alt text](images/image2.png)
-![Alt text](images/image3.png)
+
 ![Alt text](images/image4.png)
 ![Alt text](images/image5.png)
 ![Alt text](images/image6.png)

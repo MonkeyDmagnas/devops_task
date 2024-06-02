@@ -41,9 +41,9 @@ git remote add origin <repo_link>
 
 •Development
 
-  • Base Image: ubuntu/focal64 \
+  • Base Image: centos/07 \
   • Hostname: development \
-  • Private IP: 192.168.56.18 \
+  • Private IP: 192.168.56.15 \
   • Memory: 1024
 
 Download and Install Vagrant( https://developer.hashicorp.com/vagrant/install ). \
